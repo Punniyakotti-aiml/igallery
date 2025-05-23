@@ -180,4 +180,5 @@ Publish the website in the given URL.
 ![exp 7](https://github.com/user-attachments/assets/71bee6b1-2085-431a-9fbd-9785ca61bddb)
 
 ##RESULT:
+
 The program for designing an interactive image gallery using HTML, CSS and JavaScript is executed successfully.
