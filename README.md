@@ -1,5 +1,5 @@
 # Ex.08 Design of Interactive Image Gallery
-## Date:17/05/2025
+## Date:23/05/2025
  
 
 ## AIM:
