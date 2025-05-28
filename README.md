@@ -1,6 +1,5 @@
 # Ex.08 Design of Interactive Image Gallery
-## Date:23/05/2025
- 
+## Date:23-05-2025
 
 ## AIM:
 To design a web application for an inteactive image gallery with minimum five images.
@@ -30,155 +29,80 @@ Publish the website in the given URL.
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Photo Gallery</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
+            font-family:cursive;
+            background-color:rgb(32, 28, 28);
+            display:flex;
+            justify-content: center;
             align-items: center;
-            background-color: #040404;
-            color: #fff;
+            margin: 0;
+            flex-direction: column;
+            
         }
-
-        h1, h2 {
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        .photo-container {
             text-align: center;
+            color:aquamarine;
+            font-size:medium;
         }
 
-        h1 {
-            color: #f0f0f1;
-        }
-
-        h2 {
-            color: #edf5ed;
-        }
-
-        .gallery {
+        .photo {
             display: flex;
             flex-wrap: wrap;
-            gap: 15px;
-            max-width: 1200px;
-            padding: 10px;
             justify-content: center;
+            gap: 10px; 
         }
 
-        .gallery-item {
-            cursor: pointer;
+        .photo-item {
+            width: 350px; 
+            height:500px;
+                }
+        footer {
             text-align: center;
-            width: 200px;
-            margin: 10px;
-            border: 2px solid #101111;
-            border-radius: 10px;
-            overflow: hidden;
-            transition: transform 0.3s;
+            font-size: 25px;
+            background-color:darkolivegreen;
+            margin-top: 250px; 
+            color:black;
         }
 
-        .gallery-item img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-
-        .gallery-item:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-        }
-
-        
-        #modal {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.8);
-            justify-content: center;
-            align-items: center;
-            z-index: 1000;
-        }
-
-        #modal img {
-            max-width: 90%;
-            max-height: 90%;
-            border: 2px solid #fff;
-        }
-
-        #modal .close {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            font-size: 30px;
-            color: #fff;
-            cursor: pointer;
-        }
     </style>
 </head>
 <body>
-    <h1>Interactive Photo Gallery</h1>
-    <h2>Aesthetic Image</h2>
-
-    <div class="gallery">
-        <div class="gallery-item"><img src="1.jpg" alt="SURIYA"></div>
-        <div class="gallery-item"><img src=".2.jpg" alt="AJITH KUMAR"></div>
-        <div class="gallery-item"><img src=".3.jpg" alt="VIJAY"></div>
-        <div class="gallery-item"><img src=".4.jpg" alt="DHANUSH"></div>
-        <div class="gallery-item"><img src=".5.jpg" alt="RAJINIKANTH"></div>
-
+    <div class="photo-container">
+        <h1 >GALLERY OF NATURE</h1>
+        <div class="photo">
+            <img src="image.avif" alt="Image 1" class="photo-item" id="image" onmouseover="zoomIn()" onmouseout="zoomOut()">
+            <img src="a-view-from-treasure.jpg" alt="Image 2" class="photo-item">
+            <img src="North-East.jpg" alt="Image 3" class="photo-item">
+            <img src="Gangotri-Glacier-Shivaling-Peak-lake-Himalayas-India.webp" alt="Image 4" class="photo-item">
+            <img src="peru-rainbow-mountain-main.jpg  " alt="Image 5" class="photo-item">
+            
+        </div>
+        <footer>
+            Designed and developed by Abisha Linu &copy 2024
+        </footer>
     </div>
+    <script> 
+    function zoomIn() { 
+    document.getElementById("image").style.width = "600px";
+      document.getElementById("image").style.height = "700px";
 
-    
-    <div id="modal">
-        <span class="close">&times;</span>
-        <img id="dinesh/softapp/static/img_5terre.jpg" src="" alt="Enlarged">
-    </div>
+    } 
+    function zoomOut() { 
+      document.getElementById("image").style.width = "350px"; 
+      document.getElementById("image").style.height = "500px";
+      
 
-
-
-    <footer>
-        &copy; Developed by:Punniyakotti   Reg Number:212224240122
-    </footer>
-
-    <script>
-        
-        const galleryItems = document.querySelectorAll('.gallery-item img');
-        const modal = document.getElementById('modal');
-        const modalImg = document.getElementById('modal-img');
-        const closeModal = document.querySelector('.close');
-
-        
-        galleryItems.forEach(item => {
-            item.addEventListener('click', () => {
-                modal.style.display = 'flex';
-                modalImg.src = item.src; 
-            });
-        });
-
-        
-        closeModal.addEventListener('click', () => {
-            modal.style.display = 'none';
-        });
-
-        
-        modal.addEventListener('click', (event) => {
-            if (event.target === modal) {
-                modal.style.display = 'none';
-            }
-        });
+    } 
     </script>
 </body>
 </html>
 
+
+
 ```
-## OUTPUT: 
-![exp 7](https://github.com/user-attachments/assets/71bee6b1-2085-431a-9fbd-9785ca61bddb)
-
-##RESULT:
-
+## OUTPUT:
+![alt text](image.png)
+![alt text](image-1.png)
+## RESULT:
 The program for designing an interactive image gallery using HTML, CSS and JavaScript is executed successfully.
