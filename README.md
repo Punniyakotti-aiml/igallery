@@ -125,11 +125,11 @@ Publish the website in the given URL.
     <h2>Aesthetic Image</h2>
 
     <div class="gallery">
-        <div class="gallery-item"><img src="1.jpg" alt="SURIYA">SURIYA</div>
-        <div class="gallery-item"><img src=".2.jpg" alt="AJITH KUMAR">AJITH KUMAR</div>
-        <div class="gallery-item"><img src=".3.jpg" alt="VIJAY">VIJAY</div>
-        <div class="gallery-item"><img src=".4.jpg" alt="DHANUSH">DHANUSH</div>
-        <div class="gallery-item"><img src=".5.jpg" alt="RAJINIKANTH">RAJINIKANTH</div>
+        <div class="gallery-item"><img src="1.jpg" alt="SURIYA"></div>
+        <div class="gallery-item"><img src=".2.jpg" alt="AJITH KUMAR"></div>
+        <div class="gallery-item"><img src=".3.jpg" alt="VIJAY"></div>
+        <div class="gallery-item"><img src=".4.jpg" alt="DHANUSH"></div>
+        <div class="gallery-item"><img src=".5.jpg" alt="RAJINIKANTH"></div>
 
     </div>
 
