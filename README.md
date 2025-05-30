@@ -79,7 +79,7 @@ Publish the website in the given URL.
             
         </div>
         <footer>
-            Designed and developed by Abisha Linu &copy 2024
+            Designed and developed Punniyakotti M &copy 2024
         </footer>
     </div>
     <script> 
